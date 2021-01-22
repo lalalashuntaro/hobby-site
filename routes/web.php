@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/hello', 'App\Http\Controllers\HelloController@index');
+
+Route::get('/hello/{id}','App\Http\Controllers\HelloController@index')->where('id','[0-9]+');
