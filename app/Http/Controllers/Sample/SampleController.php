@@ -1,15 +1,15 @@
 <?php
+namespace App\Http\Controllers\Sample;
 
-namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class HelloController extends Controller
+class SampleController extends Controller
 {
     public function index(Request $request)
     {
         $data = [
-            'msg'=>$request->hello,
+            'msg'=>'SAMPLE-CONTROLLER-INDEX!',
         ];
         return view('hello.index', $data);
     }
@@ -17,8 +17,10 @@ class HelloController extends Controller
     public function other(Request $request)
     {
         $data = [
-            'msg'=>$request->bye,
+            'msg'=>'SAMPLE-CONTROLLER-OTHER!!',
         ];
         return view('hello.index', $data);
     }
 }
+
+?>

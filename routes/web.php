@@ -19,4 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/hello', 'App\Http\Controllers\HelloController@index');
 
-Route::get('/hello/{id}','App\Http\Controllers\HelloController@index')->where('id','[0-9]+');
+// Route::middleware([App\Http\Middleware\HelloMiddleware::class])->group(function() {
+//     Route::get('/hello', 'App\Http\Controllers\HelloController@index');
+//     Route::get('/hello/other', 'App\Http\Controllers\HelloController@other');
+// });
+
+Route::namespace('App\Http\Controllers\Sample')->group(function() {
+    Route::get('/sample', 'SampleController@index');
+    Route::get('/sample/other', 'SampleController@other');
+});
