@@ -8,6 +8,6 @@ class HobbyController extends Controller
 {
     public function index()
     {
-        return view('hobby.index');
+        return view('hobby.login');
     }
 }
