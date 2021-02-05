@@ -1,8 +1,18 @@
-.wrapper p {
-  color: blue;
+.header-menu {
+  display: inline-block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 }
 
-h2 {
-  color: aquamarine;
+.header {
+  height: 150px;
+  background-color: yellow;
+}
+
+.header .header-logo {
+  text-align: center;
+  display: inline-block;
 }
 /*# sourceMappingURL=app.css.map */
