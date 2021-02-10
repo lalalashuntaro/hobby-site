@@ -4,9 +4,9 @@
     </head>
 </html>
 
-<div class="header-menu">
+{{-- <div class="header-menu">
     <a href=""> {{$menu}} </a>
-</div>
+</div> --}}
 <div class="header">
     <div class="header-logo">
         <a href=""> {{$logo}} </a>
@@ -17,4 +17,3 @@
         </ul>
     </div>
 </div>
-

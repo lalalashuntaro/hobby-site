@@ -18,4 +18,5 @@ const mix = require('laravel-mix');
 //    .js('resources/js/test.js', 'public/js'); // assets/js配下のmain.jsを、public/js配下にmain.jsとしてコンパイル
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/login.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
