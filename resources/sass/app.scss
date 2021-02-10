@@ -62,10 +62,98 @@ body{
 
 // --end-header-components--
 
+// --footer-components--
+footer{
+    background-color: #fdf5e6;
+    text-align: center;
+    height: 200px;
+
+    .footer-logo{
+        height: 65px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        ul{
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+        }
+        li{
+            display: inline-block;
+            margin: 10px;
+        }
+        .fa-twitter-square {
+            color: rgba(0, 172, 237, 1);
+        }
+        .fa-facebook-square {
+            color: rgba(30, 50, 97, 1) ;
+        }
+        .fa-line {
+            color: rgba(90, 230, 40, 1)  ;
+        }
+        .fa-instagram {
+            color: #3f729b;
+        }
+        /* --my-- */
+        .footer-name {
+            margin: 20px;
+            text-align: center;
+        }
+    }
+}
+// --end-footer-components--
+
 // --login-blade--
 .main-wrapper{
-    height: 900px;
+    height: 550px;
     background-color: #fdf5e6;
+    text-align: center;
+
+    .login-menu{
+        // display: inline-block;
+        margin: 0 auto;
+        width: 500px;
+        height: 400px;
+        padding-top: 50px;
+        h1{
+            color: #da70d6;
+        }
+    }
+    .login-control{
+        margin: 20px 0 ;
+        p{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input{
+            height: 50px;
+            width: 280px;
+        }
+    }
+    .login-button{
+        margin-top: 30px;
+    }
 }
 
+    .new{
+        // display: inline-block;
+        margin: 0 auto;
+        width: 700px;
+        a{
+            font-size: 25px;
+            text-decoration: none;
+        }
+        p{
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+    }
 // --end-login-blade--
+
+// --new-blade--
+
+.new-wrapper{
+    height: 550px;
+}
+
+// --end-new-blade--
