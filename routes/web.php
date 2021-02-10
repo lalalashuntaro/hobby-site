@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('login', 'App\Http\Controllers\HobbyController@login');
 Route::get('new', 'App\Http\Controllers\HobbyController@new');
+Route::get('mail', 'App\Http\Controllers\HobbyController@new');
 // Route::get('/', function(){
 //     return view('hobby.index');
 // });

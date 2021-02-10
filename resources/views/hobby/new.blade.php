@@ -1,3 +1,8 @@
+
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +18,7 @@
     @extends('layouts.hobbyapp')
         @section('main')
             <div class="new-wraaper">
-                
+
             </div>
         @endsection
 </body>

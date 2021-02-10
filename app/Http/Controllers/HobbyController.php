@@ -15,4 +15,9 @@ class HobbyController extends Controller
     {
         return view('hobby.new');
     }
+
+    public function mail()
+    {
+        return view('hobby.mail');
+    }
 }
