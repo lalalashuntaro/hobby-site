@@ -1,8 +1,4 @@
 
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -11,15 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HLS</title>
     <link rel="icon" type="" href="{{ asset('/favicon3.ico') }}">
-    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/new.css') }}">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-    @extends('layouts.hobbyapp')
-        @section('main')
-            <div class="new-wraaper">
+    @extends('layouts.hobbynew')
+    @section('main')
+    <form action="" method="post">
+        <div class="control">
+            <input type="mail" placeholder="メールアドレス" style="padding-left: 15px;" name="email">
+        </div>
 
-            </div>
-        @endsection
+        <div class="control">
+            <input type="password" placeholder="パスワード" style="padding-left: 15px;" name="pasword" >
+        </div>
+
+        <div class="control">
+            <input type="password" placeholder="パスワード再入力" style="padding-left: 15px;" name="pasword" >
+        </div>
+        <div class="control-button">
+            <button>登録</button>
+        </div>
+    </form>
+    <br>
+    ＊本登録ではございません。
+    @endsection
 </body>
 </html>

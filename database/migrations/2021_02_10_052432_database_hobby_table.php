@@ -13,7 +13,12 @@ class DatabaseHobbyTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('people', function(Blueprint $table){
+            $table->increments('id');
+            $table->string('name');
+            $table->string('mail');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class DatabaseHobbyTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('people');
     }
 }
