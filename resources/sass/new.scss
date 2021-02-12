@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+}
+
+// --newheader-components--
+
+.header{
+    height: 156px;
+    background-color: #fdf5e6;
+
+    .header-logo{
+        // text-align: center;
+        display: block;
+        height: 60px;
+        padding: 20px 0;
+        margin-left: 70px;
+        a{
+            color: #4b0082;
+            font-family: 'Caveat', cursive;
+            font-weight: 900;
+            line-height: inherit;
+            font-size: 70px;
+            text-decoration: none;
+        }
+    }
+
+    .login-button{
+        float: right;
+        margin-right: 60px;
+        button{
+            font-size: 25px;
+            background-color: azure;
+            color: black;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+// --end--newheader-components--
+
+// --new-blade--
+
+main{
+    height: 540px;
+    background-color: #fdf5e6;
+    padding-top: 100px;
+    .new-wrapper{
+        background-color: cadetblue;
+        height: 400px;
+        width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 40px;
+        input{
+            height: 50px;
+            width: 280px;
+            margin-top: 20px;
+        }
+        button{
+            margin-top: 20px;
+            height: 40px;
+            width: 140px;
+        }
+    }
+}
+
+// --end-new-blade--

@@ -15,7 +15,7 @@
         @section('main')
             <div class="login-menu">
                 <h1>ログイン</h1>
-            <form action="/login" method="post">
+            <form action="" method="post">
                 @csrf
                 <div class="login-control">
                     <input type="text" placeholder="メールアドレス" style="padding-left: 15px;" name="email">
