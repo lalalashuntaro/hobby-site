@@ -13,6 +13,9 @@
 <body>
     @extends('layouts.hobbynew')
     @section('main')
+    <div class="login-name">
+        仮会員登録
+    </div>
     <form action="" method="post">
         <div class="control">
             <input type="mail" placeholder="メールアドレス" style="padding-left: 15px;" name="email">
@@ -29,8 +32,6 @@
             <button>登録</button>
         </div>
     </form>
-    <br>
-    ＊本登録ではございません。
     @endsection
 </body>
 </html>

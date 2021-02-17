@@ -20,3 +20,7 @@ Route::get('mail','App\Http\Controllers\HobbyController@mail');
 //     return view('hobby.index');
 // });
 
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
