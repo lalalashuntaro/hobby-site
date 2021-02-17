@@ -10,7 +10,6 @@
     background-color: #fdf5e6;
 
     .header-logo{
-        // text-align: center;
         display: block;
         height: 60px;
         padding: 20px 0;
@@ -45,7 +44,7 @@
 
 main{
     height: 540px;
-    background-color: #fdf5e6;
+    background-color: white;
     padding-top: 100px;
     .new-wrapper{
         background-color: cadetblue;
@@ -54,7 +53,15 @@ main{
         margin: 0 auto;
         text-align: center;
         border-radius: 20px;
-        padding-top: 40px;
+        .login-name{
+            background-color: cornsilk;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            text-align: left;
+            font-size: 20px;
+            padding: 20px;
+            padding-left: 40px;
+        }
         input{
             height: 50px;
             width: 280px;

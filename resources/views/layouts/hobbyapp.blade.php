@@ -3,7 +3,6 @@
 <html lang="ja">
 <head>
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('/css/login.css') }}">
 </head>
 <body>
     @component('components.header')
