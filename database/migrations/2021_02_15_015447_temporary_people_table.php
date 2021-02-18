@@ -13,7 +13,10 @@ class TemporaryPeopleTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('people', function(Blueprint $table){
+            $table->tinyInteger('email_verified')->default(0);
+            $table->string('email_verify_token')->nullable();
+        });
     }
 
     /**
@@ -23,6 +26,9 @@ class TemporaryPeopleTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('peoople', function(Blueprint $table){
+            $table->dropClumn('email_verified');
+            $table->dropClumn('email_verify_token');
+        });
     }
 }
