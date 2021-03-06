@@ -17,6 +17,16 @@ class HobbyController extends Controller
         return view('hobby.new');
     }
 
+    public function registered()
+    {
+        return view('hobby.registered');
+    }
+
+    public function confirmation()
+    {
+        return view('hobby.confirmation');
+    }
+
     public function mail()
     {
         $items = DB::table('people')->get();
