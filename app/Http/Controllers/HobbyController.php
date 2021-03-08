@@ -12,12 +12,12 @@ class HobbyController extends Controller
         return view('hobby.login');
     }
 
-    public function new()
+    public function new(Repuest $request)
     {
         return view('hobby.new');
     }
 
-    public function registered()
+    public function registered(Request $repuest)
     {
         return view('hobby.registered');
     }
