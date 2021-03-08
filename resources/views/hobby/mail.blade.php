@@ -13,10 +13,7 @@
     @extends('layouts.hobbynew')
         @section('main')
             <div class="new-wraaper">
-                @foreach($items as $item)
-                    <h1> {{$item -> name}} </h1>
-                    <h2> {{$item -> mail}} </h2>
-                @endforeach
+                
             </div>
         @endsection
 </body>
