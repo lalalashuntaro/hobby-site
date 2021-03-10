@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class HobbyController extends Controller
+class LoginController extends Controller
 {
-    public function index()
+    public function login()
     {
-        
+        return view('hobby.login');
     }
 }

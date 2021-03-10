@@ -29,7 +29,7 @@ class EmailVerification extends Mailable
     public function build()
     {
         return $this
-        ->subject('[hobby-site]　仮登録が完了しました')
+        ->subject('[hobby-site]仮登録が完了しました')
         ->view('\auth\email\gest')
         ->with(['token' => $this->people->email_verify_token,]);
     }
