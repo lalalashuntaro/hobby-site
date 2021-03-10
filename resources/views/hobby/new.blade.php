@@ -16,7 +16,7 @@
     <div class="login-name">
         仮会員登録
     </div>
-    <form action="" method="post">
+    <form action=" {{ route('confirmation') }} " method="post">
         <div class="control">
             <input type="mail" placeholder="メールアドレス" style="padding-left: 15px;" name="email">
         </div>
