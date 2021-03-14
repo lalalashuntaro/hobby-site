@@ -9,6 +9,6 @@ class LoginController extends Controller
 {
     public function login()
     {
-        return view('hobby.login');
+        return view('enter.login');
     }
 }
