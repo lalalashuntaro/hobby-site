@@ -13,9 +13,10 @@ class RegisterController extends Controller
         return view('register.new');
     }
 
-    public function confirmation()
+    public function confirmation(Request $request)
     {
-        return view('register.confirmation');
+        $data = $request->all();
+        return view('register.confirmation', compact('data'));
     }
 
 }

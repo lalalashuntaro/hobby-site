@@ -22,8 +22,11 @@ use Illuminate\Support\Facades\Route;
 // Auth::routes();
 
 Route::get('login', 'App\Http\Controllers\LoginController@login');
-
 Route::get('new', 'App\Http\Controllers\RegisterController@new');
+Route::post('confirmation', 'App\Http\Controllers\RegisterController@confirmation');
 
-Route::get('confirmation', 'App\Http\Controllers\RegisterController@confirmation');
+// --test-- //
 
+Route::get('hello', 'App\Http\Controllers\HelloController@index');
+
+Route::post('hello', 'App\Http\Controllers\HelloController@post');
