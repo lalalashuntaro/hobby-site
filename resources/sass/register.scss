@@ -86,3 +86,20 @@ main{
     }
 }
 // --end-registered--blade--
+
+// --confirmation--blade--
+
+.confir {
+    margin-top: 45px;
+    p {
+        color: white;
+        font-size: 25px;
+        display: inline-block;
+    }
+}
+
+.button {
+    margin-top: 20px;
+}
+
+// --end--confirmation--blade--
