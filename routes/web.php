@@ -13,20 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function(){
-//     return view('hobby.index');
-// });
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes();
 
-// Auth::routes();
+Route::get('/',function(){
+    return view('welcome');
+});
 
-Route::get('login', 'App\Http\Controllers\LoginController@login');
+// Route::get('login', 'App\Http\Controllers\LoginController@login');
 Route::get('new', 'App\Http\Controllers\RegisterController@new');
-Route::post('confirmation', 'App\Http\Controllers\RegisterController@confirmation');
+// Route::post('confirmation', 'App\Http\Controllers\RegisterController@confirmation');
+
+Route::get('main', 'App\Http\Controllers\MainController@main');
 
 // --test-- //
 
-Route::get('hello', 'App\Http\Controllers\HelloController@index');
+// Route::get('hello', 'App\Http\Controllers\HelloController@index');
 
-Route::post('hello', 'App\Http\Controllers\HelloController@post');
+// Route::post('hello', 'App\Http\Controllers\HelloController@post');

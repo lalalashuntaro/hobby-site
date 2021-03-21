@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="" href="{{ asset('/favicon3.ico') }}">
-    <link rel="stylesheet" href="{{ asset('/css/new.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/register.css') }}">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>@yield('title')</title>
 </head>
