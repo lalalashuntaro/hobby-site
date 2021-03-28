@@ -9,8 +9,6 @@ class MainController extends Controller
 {
     public function main()
     {
-
-        
         if(Auth::check()) {
             return view('/hobby/main');
         }else{
