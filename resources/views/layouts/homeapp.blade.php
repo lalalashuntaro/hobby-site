@@ -17,13 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <link href="{{ asset('css/loginfunction.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/loginfunction.css') }}" rel="stylesheet"> --}}
 
     <link rel="icon" type="" href="{{ asset('/favicon3.ico') }}">
 
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">

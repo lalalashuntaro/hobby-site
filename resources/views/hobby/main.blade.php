@@ -1,4 +1,3 @@
-<h1>こんにちは</h1>
 
 {{-- --logout--}}
 <a class="dropdown-item" href="{{ route('logout') }}"

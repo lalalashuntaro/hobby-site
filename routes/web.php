@@ -17,15 +17,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
-Route::get('/',function(){
-    return view('welcome');
-});
+// Route::get('/',function(){
+//     return view('welcome');
+// });
 
 // Route::get('login', 'App\Http\Controllers\LoginController@login');
-Route::get('new', 'App\Http\Controllers\RegisterController@new');
+// Route::get('new', 'App\Http\Controllers\RegisterController@new');
 // Route::post('confirmation', 'App\Http\Controllers\RegisterController@confirmation');
 
-Route::get('main', 'App\Http\Controllers\MainController@main');
+// Route::get('main', 'App\Http\Controllers\MainController@main');
 
 // --test-- //
 
